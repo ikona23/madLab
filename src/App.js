@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header'
 import StorePicker from './components/StorePicker'
+import Order from './components/Order'
+import Inventory from './components/Inventory'
 
 
 class App extends Component {
@@ -12,8 +14,9 @@ class App extends Component {
       <div className="menu">
         <Header />
         <StorePicker />
+        <Order />
+        <Inventory />
       </div>
-        <h1>Inventory</h1>
       </div>
     )
   }

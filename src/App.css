@@ -6,6 +6,31 @@
   background: #ff7b29;
 }
 
+.order {
+  background:;
+  text-align: center;
+  padding: 20px;
+}
+
+.inventory {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  padding:20px;
+}
+
+.orderHeader {
+  text-align: center;
+}
+
+.storeSelector {
+  height: 150px;
+  text-align:center;
+  background: ;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 200s linear;
   height: 80px;
