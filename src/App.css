@@ -11,6 +11,12 @@
   height: 80px;
 }
 
+.header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
 .App-header {
   background-color: #222;
   height: 150px;

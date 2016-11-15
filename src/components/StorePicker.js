@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 
 
-class StorePicker extends Component{
+class StorePicker extends React.Component{
   render(){
   return (
     <form className="store-selector">
