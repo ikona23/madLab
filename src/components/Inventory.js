@@ -6,7 +6,7 @@ class Inventory extends React.Component {
         <div className="inventory">
           <hr/>
           <h2 className="inverntoryHeader">Inventory</h2>
-          <input type="text" require placeholder="Item name"/>
+          <input type="text" placeholder="Item name"/>
           <button type="submit">Find the item</button>
         </div>
       )

@@ -6,7 +6,7 @@ class Order extends React.Component {
       <div className="order">
         <hr/>
         <h2 className="orderHeader">Order Item</h2>
-        <input type="text" require placeholder="Item name"/>
+        <input type="text" placeholder="Item name"/>
         <button type="submit">Go to item</button>
       </div>
     )
