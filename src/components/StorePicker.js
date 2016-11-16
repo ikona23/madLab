@@ -21,13 +21,10 @@ class StorePicker extends React.Component{
     <form className="storeSelector" onSubmit={this.gotToStore.bind(this)}>
       <h1>menumaker</h1>
       <img src={logo} className="App-logo" alt="logo" />
-      <h4 className='time'>{getNow()}</h4>
-      <h4>Please choose a Restaurant</h4>
-        <li>{getName()}</li>
+        <h4 className='time'>{getNow()}</h4>
+        <h4>Please choose a Restaurant</h4>
+          <input type="text" defaultValue={getName()} ref={(input) => {this.storeInput = input}}/>
         <br/>
-        <hr/>
-      <input type="text" defaultValue={getName()} ref={(input) => {this.storeInput = input}}/>
-      <br/>
       <Button type="submit">Enter Restaurant</Button>
     </form>
   )

@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import {Button} from 'react-materialize'
 
 class Order extends React.Component {
   render() {
@@ -6,7 +7,7 @@ class Order extends React.Component {
       <div className="order">
         <h2 className="orderHeader">Order Item</h2>
         <input type="text" className="lineInput" placeholder="Item name"/>
-        <button type="submit">Go to item</button>
+        <Button type="submit">Go to item</Button>
       </div>
     )
   }

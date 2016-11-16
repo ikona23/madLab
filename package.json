@@ -1,4 +1,4 @@
- {
+{
   "name": "madLab",
   "version": "0.1.0",
   "private": true,
@@ -10,8 +10,9 @@
     "lodash": "^4.16.6",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-fontawesome": "^1.4.0",
     "react-router": "^4.0.0-2",
-    "surge":"^0.11.1"
+    "surge": "^0.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
