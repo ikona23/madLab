@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-
 import './App.css';
 import Header from './components/Header'
 import StorePicker from './components/StorePicker'
 import Order from './components/Order'
 import Inventory from './components/Inventory'
-import NotFound from './components/NotFound'
+import { getNow } from './helpers'
 
 
 class App extends Component {
@@ -13,9 +12,9 @@ class App extends Component {
     return (
       <div className="burgerOftheDay">
       <div className="menu">
-        <Header tagline="Today is: "/>
+        <Header tagline='Today is:'/>
+        <p> {getNow()} </p>
       </div>
-        <StorePicker />
         <Order />
         <Inventory />
       </div>

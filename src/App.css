@@ -12,6 +12,9 @@
   padding: 20px;
 }
 
+.App-logo {
+  width:25%;
+}
 .notFound{
   text-align: center;
   font-size:4rem;
@@ -30,15 +33,24 @@
   text-align: center;
   padding: 20px;
   color:white;
+  width:30%;
+  float:left;
 }
 
 .inventory {
   text-align: center;
   padding: 20px;
+  width:30%;
+  float:right;
+}
+
+.headerLogo {
+  width:200px;
 }
 
 .orderHeader {
   text-align: center;
+  color:black;
 }
 .time {
   font-size:1.4em;
@@ -46,11 +58,13 @@
 }
 .storeSelector {
   padding:30px;
-  width: 70%;
-  margin-top: 10%;
+  width: 60%;
+  margin-bottom:50px;
+  background: #C76448;
+  margin-top: 40px;
+  margin-bottom: 10%;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
-  background: ;
   border: 1px solid black;
 }

@@ -1,13 +1,12 @@
 import React from 'react'
+import NewForm from './NewForm'
 
 class Inventory extends React.Component {
     render() {
       return (
         <div className="inventory">
-          <hr/>
           <h2 className="inverntoryHeader">Inventory</h2>
-          <input type="text" placeholder="Item name"/>
-          <button type="submit">Find the item</button>
+          <NewForm />
         </div>
       )
     }
