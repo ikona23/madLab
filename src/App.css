@@ -40,39 +40,17 @@
 .orderHeader {
   text-align: center;
 }
+.time {
+  font-size:1.4em;
 
+}
 .storeSelector {
   padding:30px;
-  width: 40%;
+  width: 70%;
+  margin-top: 10%;
   margin-left:auto;
   margin-right:auto;
   text-align:center;
   background: ;
   border: 1px solid black;
-
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 200s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.html {
-background-color: #222;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }

@@ -1,18 +1,21 @@
 import React from 'react';
 import { getName } from '../helpers'
+import { getNow } from '../helpers'
+import {Button, Icon} from 'react-materialize';
 
 
 class StorePicker extends React.Component{
   render(){
   return (
     <form className="storeSelector">
-      <h2>Please enter a store</h2>
+          <h4 className='time'>{getNow()}</h4>
+      <h4>Please choose a store</h4>
         <li>{getName()}</li>
         <br/>
         <hr/>
       <input type="text" defaultValue={getName()} />
       <br/>
-      <button type="submit">Visit Store</button>
+      <Button type="submit">Visit Store</Button>
     </form>
   )
   }
