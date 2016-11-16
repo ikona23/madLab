@@ -14,5 +14,4 @@ class NewForm extends React.Component {
     }
   }
 
-
 export default NewForm
