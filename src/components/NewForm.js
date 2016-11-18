@@ -5,25 +5,27 @@ class NewForm extends React.Component {
     createMenuItem(event){
       event.preventDefault()
       console.log('lets make some food');
+        const burger = {
+          name: this.name.value,
+          price: this.price.value,
+          status: this.status.value,
+          description: this.desc.value,
+          image: this.image.value,
+        }
+        console.log(burger);
     }
+
     render() {
       return (
-        <form className="editMenu" onSubmit={this.createMenuItem.bind(this)}>
-
-            <input type='text' placeholder='Food Name' />
-            <input type='text' placeholder='Food Price' />
-            <div>
-            <select>
-              <option defaultValue="">Choose your option</option>
-              <option defaultValue="1">Option 1</option>
-              <option defaultValue="2">Option 2</option>
-              <option defaultValue="3">Option 3</option>
+        <form className="input-field col s6" onSubmit={this.createMenuItem.bind(this)}>
+            <input ref={(input) => this.name = input} type='text' placeholder='Food Name' />
+            <input ref={(input) => this.price = input} type='text' placeholder='Food Price' />
+            <select ref={(input) => this.status = input}>
+              <option value="available">Fresh</option>
+              <option value="unavailable">Sold Out!</option>
             </select>
-          </div>
-            <textarea placeholder="Menu Desc"></textarea>
-            <input type='text' placeholder='Status' />
-            <input type='text' placeholder='Food Description' />
-            <input type='text' placeholder='Food Image' />
+            <textarea ref={(input) => this.desc = input} placeholder="Menu Desc"></textarea>
+            <input ref={(input) => this.image = input} type='text' placeholder='Food Image' />
 
             <Button className='btn waves-effect waves-light' name="action" type='submit'>+Add Item</Button>
         </form>

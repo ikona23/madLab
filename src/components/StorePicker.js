@@ -19,7 +19,7 @@ class StorePicker extends React.Component{
 
   return (
     <form className="storeSelector" onSubmit={this.gotToStore.bind(this)}>
-      <h1>menumaker</h1>
+      <h3>menumaker</h3>
       <img src={logo} className="App-logo" alt="logo" />
         <h4 className='time'>{getNow()}</h4>
         <h4>Please choose a Restaurant</h4>
