@@ -12,7 +12,7 @@ class Inventory extends React.Component {
   <option defaultValue="coconut">Coconut</option>
   <option value="mango">Mango</option>
 </select>
-          <NewForm />
+          <NewForm addBurger={this.props.addBurger}/>
         </div>
       )
     }

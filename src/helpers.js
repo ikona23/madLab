@@ -15,3 +15,7 @@ export function getNow(){
                   + currentdate.getSeconds();
                   return datetime
 }
+
+export function timeTo() {
+  var currented = Date.now()
+}
