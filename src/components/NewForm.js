@@ -12,12 +12,13 @@ class NewForm extends React.Component {
           description: this.desc.value,
           image: this.image.value,
         }
-        console.log(burger);
+        this.props.addBurger(burger)
+        this.newFrom.reset()
     }
 
     render() {
       return (
-        <form className="input-field col s6" onSubmit={this.createMenuItem.bind(this)}>
+        <form ref={(input)=>this.newFrom = input} className="input-field col s6" onSubmit={this.createMenuItem.bind(this)}>
             <input ref={(input) => this.name = input} type='text' placeholder='Food Name' />
             <input ref={(input) => this.price = input} type='text' placeholder='Food Price' />
             <select ref={(input) => this.status = input}>
