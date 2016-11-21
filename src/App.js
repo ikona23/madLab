@@ -20,6 +20,7 @@ class App extends Component {
       order:{}
     }
   }
+
   addBurger(burger){
     //update state
     const burgers = {...this.state.burgers}
@@ -28,30 +29,30 @@ class App extends Component {
     this.setState({burgers})
 }
 
-loadSamples(){
-  this.setState({
-    burgers:sampleData
-  })
-    //set state
-  }
-  render() {
-    return (
-      <div className="burgerOftheDay">
-      <div className="menu">
-        <Header tagline='Today is:'/>
-        <ul className="listOfBurgers">
-          {
-            Object.keys(this.state.burgers)
-            .map(key => <Burger />)
-          }
-        </ul>
-        <p> {getNow()} </p>
-      </div>
-        <Order />
-        <Inventory addBurger={this.addBurger} loadSamples={this.loadSamples} />
-      </div>
-    )
-  }
+  loadSamples(){
+    this.setState({
+      burgers:sampleData
+    })
+      //set state
+    }
+    render() {
+      return (
+        <div className="burgerOftheDay">
+        <div className="menu">
+          <Header tagline='Today is:'/>
+          <ul className="listOfBurgers">
+            {
+              Object.keys(this.state.burgers)
+              .map(key => <Burger />)
+            }
+          </ul>
+          <p> {getNow()} </p>
+        </div>
+          <Order />
+          <Inventory addBurger={this.addBurger} loadSamples={this.loadSamples} />
+        </div>
+      )
+    }
 }
 
 export default App;
