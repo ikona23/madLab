@@ -18,19 +18,19 @@ const burgers = {
     status: 'available'
   },
   burger4: {
-    name:'Veggie Heaven',
+    name:'Veggie Porn',
     image: 'http://lorempixel.com/400/200/sports/4/',
     desc: 'This is delicious veggie burger',
     status: 'available'
   },
   burger5: {
-    name:'Veggie Hell',
+    name:'Veggie Mushies',
     image: 'http://lorempixel.com/400/200/sports/5/',
     desc: 'This is delicious veggie burger',
     status: 'available'
   },
   burger6: {
-    name:'Veggie Bliss',
+    name:'Veggie Double',
     image: 'http://lorempixel.com/400/200/sports/6/',
     desc: 'This is delicious veggie burger',
     status: 'available'

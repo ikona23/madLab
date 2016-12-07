@@ -3,7 +3,9 @@ import React from 'react'
 class Burger extends React.Component {
   render() {
     return(
-      <li className="menuBurger">🍔 Burger Vegenaut</li>
+      <li className="menuBurger">
+        {this.props.details.name}
+      </li>
     )
   }
 }
