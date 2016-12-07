@@ -10,7 +10,7 @@ class Burger extends React.Component {
         <img src={this.props.details.image} alt=
         {this.props.details.name} />
         <p>{this.props.details.desc}</p>
-                <Button type="submit">{buttonText}</Button>
+          <Button disabled={!isAvailable} type="submit" class='button'>{buttonText}</Button>
       <hr/>
         <p>{this.props.details.status}</p>
         <p>{this.props.details.price}</p>

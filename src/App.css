@@ -11,7 +11,9 @@
   text-align: center;
   padding: 20px;
 }
-
+.button.btn.disabled {
+  color:red;
+}
 .App-logo {
   text-align:center;
 }
