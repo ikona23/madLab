@@ -3,7 +3,7 @@ import React from 'react'
 class Burger extends React.Component {
   render() {
     return(
-      <li className="menuBurger">🍔</li>
+      <li className="menuBurger">🍔 Burger Vegenaut</li>
     )
   }
 }

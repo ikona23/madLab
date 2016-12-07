@@ -41,9 +41,10 @@ class App extends Component {
         <div className="menu">
           <Header tagline='Today is:'/>
           <ul className="listOfBurgers">
+          <hr/>
             {
               Object.keys(this.state.burgers)
-              .map(key => <Burger />)
+              .map(key => <Burger key={key} details={this.state.burgers[key]}/>)
             }
           </ul>
           <p> {getNow()} </p>
