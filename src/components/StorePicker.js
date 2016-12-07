@@ -1,9 +1,8 @@
 import React from 'react';
 import { getName } from '../helpers'
 import { getNow } from '../helpers'
-import logo from '../logo.svg'
+import logo from '../img/regal_logo.png'
 import {Button} from 'react-materialize'
-
 
 class StorePicker extends React.Component{
 
@@ -21,11 +20,11 @@ class StorePicker extends React.Component{
     <form className="storeSelector" onSubmit={this.gotToStore.bind(this)}>
       <h3>menumaker</h3>
       <img src={logo} className="App-logo" alt="logo" />
-        <h4 className='time'>{getNow()}</h4>
-        <h4>Please choose a Restaurant</h4>
+        <h7 className='time'>{getNow()}</h7>
+        <h5>Please choose a Branch</h5>
           <input type="text" defaultValue={getName()} ref={(input) => {this.storeInput = input}}/>
         <br/>
-      <Button type="submit">Enter Restaurant</Button>
+      <Button type="submit">Setup Menu</Button>
     </form>
   )
   }

@@ -6,7 +6,6 @@ import { BrowserRouter, Match, Miss} from 'react-router';
 import StorePicker from './components/StorePicker';
 import NotFound from './components/NotFound';
 
-
 const Root = () => {
   return (
     <BrowserRouter>

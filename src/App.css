@@ -13,9 +13,11 @@
 }
 
 .App-logo {
-  width:25%;
+  text-align:center;
 }
-
+.order {
+  margin-bottom:10px;
+}
 .notFound{
   text-align: center;
   font-size:4rem;

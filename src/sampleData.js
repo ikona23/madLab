@@ -13,13 +13,14 @@ const burgers = {
   },
   burger3: {
     name:'Veggie Bliss',
-    image: 'http://lorempixel.com/400/200/sports/3/',
+    image: '../regal_logo.png',
     desc: 'This is delicious veggie burger',
-    status: 'available'
+    status: 'available',
+    price:7.50
   },
   burger4: {
     name:'Veggie Porn',
-    image: 'http://lorempixel.com/400/200/sports/4/',
+    image: 'http://lorempixel.com/400/200/sports/7/',
     desc: 'This is delicious veggie burger',
     status: 'available'
   },
@@ -33,7 +34,7 @@ const burgers = {
     name:'Veggie Double',
     image: 'http://lorempixel.com/400/200/sports/6/',
     desc: 'This is delicious veggie burger',
-    status: 'available'
+    status: 'not available'
     }
   }
 
