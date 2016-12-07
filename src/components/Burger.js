@@ -4,7 +4,8 @@ class Burger extends React.Component {
   render() {
     return(
       <li className="menuBurger">
-        {this.props.details.name}
+        <img src={this.props.details.image} alt=
+        {this.props.details.name} />
       </li>
     )
   }

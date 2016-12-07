@@ -24,6 +24,7 @@
   background: #291453;
   color:white;
   font-size: 1.6em;
+  border-left: 6px solid red;
 
 }
 .header {
