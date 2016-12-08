@@ -4,6 +4,7 @@ import Header from './components/Header'
 import StorePicker from './components/StorePicker'
 import Order from './components/Order'
 import Burger from './components/Burger'
+import Drink from './components/Drink'
 import Inventory from './components/Inventory'
 import { getNow } from './helpers'
 import sampleData from './sampleData'
@@ -14,10 +15,12 @@ class App extends Component {
   constructor() {
     super()
     this.addBurger = this.addBurger.bind(this)
+    this.addDrink = this.addDrink.bind(this)
     this.loadSamples = this.loadSamples.bind(this)
     //get initial state
     this.state = {
       burgers:{},
+      drinks:{},
       order:{}
     }
   }
@@ -60,8 +63,16 @@ class App extends Component {
               .map(key => <Burger key={key} details={this.state.burgers[key]}/>)
             }
           </ul>
+          <ul className="listOfBurgers">
+          <hr/>
+            {
+              Object.keys(this.state.drinks)
+              .map(key => <Drink key={key} details={this.state.drinks[key]}/>)
+            }
+          </ul>
           <p> {getNow()} </p>
         </div>
+
           <Order />
           <Inventory addBurger={this.addBurger} loadSamples={this.loadSamples} />
         </div>
