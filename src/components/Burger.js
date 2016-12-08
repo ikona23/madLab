@@ -4,7 +4,7 @@ import {Button} from 'react-materialize'
 class Burger extends React.Component {
   render() {
     const isAvailable = this.props.details.status === 'available'
-    const buttonText = isAvailable ? 'Add to order' : 'Sold'
+    const buttonText = isAvailable ? 'Add to order' : 'Sold Out'
     return(
       <li className="menuBurger">
         <img src={this.props.details.image} alt=
