@@ -5,10 +5,12 @@ import StorePicker from './components/StorePicker'
 import Order from './components/Order'
 import Burger from './components/Burger'
 import Drink from './components/Drink'
+import Addon from './components/Addon'
 import Inventory from './components/Inventory'
 import { getNow } from './helpers'
 import sampleData from './sampleData'
 import sampleData2 from './sampleData2'
+import sampleData3 from './sampleData3'
 
 
 class App extends Component {
@@ -21,7 +23,8 @@ class App extends Component {
     this.state = {
       burgers:{},
       drinks:{},
-      order:{}
+      order:{},
+      addons:{}
     }
   }
 
@@ -41,12 +44,22 @@ class App extends Component {
     this.setState({drinks})
 }
 
+  addAddon(addon){
+    //update state
+    const addons = {...this.state.addons}
+    const timestamp = Date.now
+    addons[`drink-${timestamp}`] = addon
+    this.setState({addons})
+}
+
 
 
   loadSamples(){
     this.setState({
       burgers:sampleData,
-      drinks:sampleData2
+      drinks:sampleData2,
+      addons:sampleData3
+
     })
       //set state
     }
@@ -56,6 +69,7 @@ class App extends Component {
         <div className="burgerOftheDay">
         <div className="menu">
           <Header tagline='Today is:'/>
+
           <ul className="listOfBurgers">
           <hr/>
             {
@@ -63,6 +77,7 @@ class App extends Component {
               .map(key => <Burger key={key} details={this.state.burgers[key]}/>)
             }
           </ul>
+
           <ul className="listOfBurgers">
           <hr/>
             {
@@ -70,9 +85,16 @@ class App extends Component {
               .map(key => <Drink key={key} details={this.state.drinks[key]}/>)
             }
           </ul>
+          <ul className="listOfAddons">
+          <hr/>
+            {
+              Object.keys(this.state.addons)
+              .map(key => <Addon key={key} details={this.state.addons[key]}/>)
+            }
+          </ul>
+
           <p> {getNow()} </p>
         </div>
-
           <Order />
           <Inventory addBurger={this.addBurger} loadSamples={this.loadSamples} />
         </div>

@@ -17,6 +17,13 @@
 .App-logo {
   text-align:center;
 }
+.menuBurger {
+  background:#7FFFD4;
+}
+.menuDrinks {
+  background:#708090;
+  color: white;
+}
 .order {
   margin-bottom:10px;
 }
