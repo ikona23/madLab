@@ -7,6 +7,7 @@ import Burger from './components/Burger'
 import Inventory from './components/Inventory'
 import { getNow } from './helpers'
 import sampleData from './sampleData'
+import sampleData2 from './sampleData2'
 
 
 class App extends Component {
@@ -29,12 +30,24 @@ class App extends Component {
     this.setState({burgers})
 }
 
+  addDrink(drink){
+    //update state
+    const drinks = {...this.state.drinks}
+    const timestamp = Date.now
+    drinks[`drink-${timestamp}`] = drink
+    this.setState({drinks})
+}
+
+
+
   loadSamples(){
     this.setState({
-      burgers:sampleData
+      burgers:sampleData,
+      drinks:sampleData2
     })
       //set state
     }
+
     render() {
       return (
         <div className="burgerOftheDay">
