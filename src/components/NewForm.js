@@ -11,6 +11,7 @@ class NewForm extends React.Component {
           status: this.status.value,
           description: this.desc.value,
           image: this.image.value,
+          time: this.ttime.value,
         }
         this.props.addBurger(burger)
         this.newFrom.reset()
