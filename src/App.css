@@ -16,6 +16,9 @@
 }
 .App-logo {
   text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
 }
 .menuBurger {
   background:#7FFFD4;
