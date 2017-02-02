@@ -1,5 +1,5 @@
 export function getName(){
-  const stores = ['Restaurant No1 ', 'Restaurant No2 ', 'Restaurant No3', 'Restaurant No4']
+  const stores = ['Regal Burger']
   for (var i = 0; i < stores.length; i++) {
   }
   return stores[0] + "," + stores[1]+ "," + stores[2]
@@ -18,4 +18,5 @@ export function getNow(){
 
 export function timeTo() {
   var currented = Date.now()
+  return currented
 }

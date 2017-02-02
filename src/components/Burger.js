@@ -3,6 +3,7 @@ import {Button} from 'react-materialize'
 
 class Burger extends React.Component {
   render() {
+    const {details} = this.props
     const isAvailable = this.props.details.status === 'available'
     const buttonText = isAvailable ? 'Add to order' : 'Sold Out'
     return(
@@ -11,10 +12,10 @@ class Burger extends React.Component {
         <img src={this.props.details.image} alt=
         {this.props.details.name} />
         <p>{this.props.details.desc}</p>
-          <Button disabled={!isAvailable} type="submit" class='button'>{buttonText}</Button>
-      <hr/>
-
+          <Button disabled={!isAvailable} type="submit">{buttonText}</Button>
+      <hr/><span>
         <p>{this.props.details.price}</p>
+      </span>
       </li>
     )
   }

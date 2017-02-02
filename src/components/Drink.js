@@ -9,9 +9,9 @@ class Drink extends React.Component {
       <li className="menuDrinks">
         {this.props.details.drinkName} <br/>
         <img src={this.props.details.drinkImage} alt=
-        {this.props.details.drinkName} />
+{this.props.details.drinkName} />
         <p>{this.props.details.drinkDesc}</p>
-          <Button disabled={!isAvailable} type="submit" class='button'>{buttonText}</Button>
+          <Button disabled={!isAvailable} type="submit">{buttonText}</Button>
       <hr/>
         <p>{this.props.details.price}</p>
       </li>

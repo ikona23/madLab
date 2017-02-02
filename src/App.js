@@ -52,8 +52,6 @@ class App extends Component {
     this.setState({addons})
 }
 
-
-
   loadSamples(){
     this.setState({
       burgers:sampleData,

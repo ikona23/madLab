@@ -8,8 +8,6 @@ class StorePicker extends React.Component{
 
   gotToStore(event){
     event.preventDefault()
-    console.log('change url')
-    console.log(`going to ${storeId}`);
     const storeId = this.storeInput.value
     this.context.router.transitionTo(`/store/${storeId}`)
   }
