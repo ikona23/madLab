@@ -8,8 +8,7 @@ class Drink extends React.Component {
     return(
       <li className="menuDrinks">
         {this.props.details.drinkName} <br/>
-        <img src={this.props.details.drinkImage} alt=
-{this.props.details.drinkName} />
+        <img src={this.props.details.drinkImage} alt={this.props.details.drinkName} />
         <p>{this.props.details.drinkDesc}</p>
           <Button disabled={!isAvailable} type="submit">{buttonText}</Button>
       <hr/>

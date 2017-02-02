@@ -19,6 +19,7 @@ class App extends Component {
     this.addBurger = this.addBurger.bind(this)
     this.addDrink = this.addDrink.bind(this)
     this.loadSamples = this.loadSamples.bind(this)
+    this.addToOrder = this.addToOrder.bind(this)
     //get initial state
     this.state = {
       burgers:{},
@@ -57,10 +58,15 @@ class App extends Component {
       burgers:sampleData,
       drinks:sampleData2,
       addons:sampleData3
-
     })
-      //set state
     }
+
+    addToOrder(key) {
+      const order = {...this.state.order}
+      order[key] = order[key] + 1 || 1
+      this.setState({order})
+    }
+
 
     render() {
       return (
@@ -72,7 +78,7 @@ class App extends Component {
           <hr/>
             {
               Object.keys(this.state.burgers)
-              .map(key => <Burger key={key} details={this.state.burgers[key]}/>)
+              .map(key => <Burger key={key} index={key} details={this.state.burgers[key]} addToOrder={this.addToOrder}/>)
             }
           </ul>
 
